@@ -510,7 +510,7 @@ textarea:-ms-input-placeholder {
 	vertical-align: middle;
 	margin-right: 5px;
 }
-.count-value .col-lg-4 {
+.count-value .col-lg-5,.count-value .col-lg-2 {
 	line-height: 60px;
 	height: 60px;
 }
@@ -1212,4 +1212,24 @@ textarea:-ms-input-placeholder {
 }
 .modal-lg{
 	width: 730px;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	background-color:#FFFFFF
+}
+::-webkit-scrollbar {
+	width:5px
+}
+::-webkit-scrollbar-track {
+	background-color:#999;
+	-webkit-border-radius:0;
+	border-radius:0
+}
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius:0;
+	border-radius:0;
+	background:#E60013;
+	-webkit-box-shadow:inset 0 0 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background:rgba(0,0,0,0.1);
 }

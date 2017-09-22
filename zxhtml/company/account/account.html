@@ -115,16 +115,16 @@
 								<div class="ibox-content count">
 									<div class="border-top">
 										<div class="row count-value">
-											<div class="col-lg-4 current-balance">
+											<div class="col-lg-5 current-balance">
 												<span><i class="iconfont icon-zhanghuyue"></i>服务费余额：</span>
 												<span class="text-danger">30000<span class="balance-spot">.00</span></span>
 											</div>
-											<div class="col-lg-4 locked-balance">
+											<div class="col-lg-5 locked-balance">
 												<span><i class="iconfont icon-qiapiansuoding"></i>冻结服务费：</span>
 												<span class="locked-value">300.00<i class="iconfont icon-shiyongbangzhu" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true"></i></span>
 												<span class="text-danger invisible">占位对齐</span>
 											</div>
-											<div class="col-lg-4">
+											<div class="col-lg-2">
 												<button type="button" class="btn btn-w-m btn-danger" data-toggle="modal" data-target="#recharge">充值</button>
 											</div>
 										</div>
@@ -349,6 +349,9 @@
 		<script src="../../js/tools.js"></script>
 		<script>
 			$(document).ready(function() { 
+				[].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
+					new SelectFx(el);
+				});
 				tools.centerModals();
 				tools.redTriangleFrame();
 				
